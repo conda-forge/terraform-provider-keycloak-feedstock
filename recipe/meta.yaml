@@ -54,4 +54,4 @@ extra:
   recipe-maintainers:
     - rluria14
     - oblute
-    - @conda-forge/terraform
+    - conda-forge/terraform
