@@ -3,7 +3,6 @@
 {% set version = "1.17.1" %}
 
 {% set name = goname.split('/')[-1] %}
-{% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
@@ -12,14 +11,12 @@ package:
   version: "{{ version }}"
 
 source:
-  - folder: {{ pkg_src }}
-    url: "https://{{ goname }}/archive/{{ version }}.tar.gz"
-    sha256: 4847deaf10c845d46d11d7360ff43d7e418d3d93b5be6ea695a6672654fc98a7
+  url: "https://{{ goname }}/archive/{{ version }}.tar.gz"
+  sha256: 4847deaf10c845d46d11d7360ff43d7e418d3d93b5be6ea695a6672654fc98a7
 
 build:
   number: 0
   script:
-    - pushd {{ pkg_src }}
     - go build -v -o $GOBIN/{{ x4_plugin }} .  # [unix]
     - go build -v -o %GOBIN%\{{ x4_plugin }} .  # [win]
 
@@ -45,7 +42,6 @@ about:
   home: https://github.com/mrparkers/terraform-provider-keycloak
   license: MIT
   license_family: MIT
-  license_file: {{ pkg_src }}/LICENSE
   summary: "Terraform provider for Keycloak."
   doc_url: https://github.com/mrparkers/terraform-provider-keycloak
   dev_url: https://github.com/mrparkers/terraform-provider-keycloak
