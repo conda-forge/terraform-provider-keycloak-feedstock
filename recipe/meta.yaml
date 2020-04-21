@@ -45,6 +45,7 @@ test:
 about:
   home: https://github.com/mrparkers/terraform-provider-keycloak
   license: MIT
+  license_file: LICENSE
   license_family: MIT
   summary: "Terraform provider for Keycloak."
   doc_url: https://github.com/mrparkers/terraform-provider-keycloak
