@@ -5,7 +5,7 @@ Home: https://github.com/mrparkers/terraform-provider-keycloak
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Terraform provider for Keycloak.
 
