@@ -153,6 +153,7 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/terraform](https://github.com/conda-forge/terraform/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
 
