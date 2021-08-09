@@ -1,6 +1,6 @@
 {% set provider = "keycloak" %}
 {% set goname = "github.com/mrparkers/terraform-provider-"+provider.lower() %}
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 1f1c0dd0422d6716d412f98848940e3cbb4b407166be5cecb2a77412b9120823
+  sha256: 0bd36abe6374f8abe891a4321bf4619076a183bf5478ca4fc93a708324103176
 
 build:
   number: 0
