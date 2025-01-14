@@ -46,9 +46,8 @@ test:
 
 about:
   home: https://github.com/mrparkers/terraform-provider-keycloak
-  license: MIT
-  license_file: LICENSE
-  license_family: MIT
+  license: Apache-2.0
+  license_file: LICENSE-APACHE-2.0
   summary: Terraform provider for Keycloak.
   doc_url: https://github.com/mrparkers/terraform-provider-keycloak
   dev_url: https://github.com/mrparkers/terraform-provider-keycloak
