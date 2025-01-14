@@ -1,6 +1,6 @@
 {% set provider = "keycloak" %}
 {% set goname = "github.com/mrparkers/terraform-provider-"+provider.lower() %}
-{% set version = "4.4.0" %}
+{% set version = "5.0.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 657234751397c9695dfb655445c943a2607615510bf698a0bf350a9e08a5a00f
+  sha256: c57d4ebb8a7c62475d43065a6eb584d2cece32b3bf26d6e6a2ece52484da6786
 
 build:
   number: 0
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{ compiler('go') }} 1.19
+    - {{ compiler('go') }} ~=1.23.0
 
 test:
   requires:
@@ -46,9 +46,8 @@ test:
 
 about:
   home: https://github.com/mrparkers/terraform-provider-keycloak
-  license: MIT
-  license_file: LICENSE
-  license_family: MIT
+  license: Apache-2.0
+  license_file: LICENSE-APACHE-2.0
   summary: Terraform provider for Keycloak.
   doc_url: https://github.com/mrparkers/terraform-provider-keycloak
   dev_url: https://github.com/mrparkers/terraform-provider-keycloak
